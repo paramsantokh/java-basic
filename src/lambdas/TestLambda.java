@@ -38,6 +38,7 @@ public class TestLambda {
     };
     
     System.out.println(comparator.compare("Hi", "Hi"));
+    
     //Using lambda
     Comparator<String> comparatorLambda = (o1, o2) -> o1.compareTo(o2);
     

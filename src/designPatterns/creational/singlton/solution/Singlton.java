@@ -1,4 +1,4 @@
-package singlton.solution;
+package designPatterns.creational.singlton.solution;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -113,7 +113,7 @@ class Test {
      *     }
      */
     
-    Class aClass = Class.forName("singlton.solution.Singlton");
+    Class aClass = Class.forName("designPatterns.creational.singlton.solution.Singlton");
     Constructor<Singlton> constructor = aClass.getDeclaredConstructor();
     constructor.setAccessible(true);
     Singlton s3 = constructor.newInstance();

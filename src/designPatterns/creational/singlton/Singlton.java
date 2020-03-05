@@ -1,13 +1,11 @@
-package singlton;
+package designPatterns.creational.singlton;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.FilterInputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.lang.reflect.Constructor;
-import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -70,7 +68,7 @@ class Test {
      1. Reflection
      */
     
-    Class aClass = Class.forName("singlton.Singlton");
+    Class aClass = Class.forName("designPatterns.creational.singlton.Singlton");
     Constructor<Singlton> constructor = aClass.getDeclaredConstructor();
     constructor.setAccessible(true);
     Singlton s3 = constructor.newInstance();
