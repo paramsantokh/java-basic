@@ -26,7 +26,9 @@ public class Demo {
         .build();
   
     System.out.println(phone);
-    Phone phone1 = new Phone.Builder().os("IOS").processor("K9")
+    Phone phone1 = new Phone.Builder()
+        .os("IOS")
+        .processor("K9")
         .battery(4000)
         .screenSize(6.3)
         .build();
