@@ -33,7 +33,7 @@ public class Product {
            type.equals(product.type);
   }
   
-  @Override
+ @Override
   public int hashCode() {
     return Objects.hash(getName(), type);
   }
